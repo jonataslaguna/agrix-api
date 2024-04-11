@@ -12,6 +12,8 @@ import com.betrybe.agrix.ebytr.staff.service.FarmSevice;
 import com.betrybe.agrix.ebytr.staff.service.exception.FarmNotFoundException;
 import java.util.List;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -45,6 +47,7 @@ public class FarmController {
    * @return the list
    */
   @GetMapping
+  @PreAuthorize("hasAuthority('ADMIN') or hasAuthority('MANAGER') or hasAuthority('USER')")
   public List<FarmDto> findAllFarms() {
     List<Farm> allFarms = farmSevice.findAll();
     return allFarms.stream()

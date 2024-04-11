@@ -7,6 +7,7 @@ import com.betrybe.agrix.ebytr.staff.service.FertilizerService;
 import com.betrybe.agrix.ebytr.staff.service.exception.FertilizerNotFoundException;
 import java.util.List;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -52,6 +53,7 @@ public class FertilizerController {
    * @return the list
    */
   @GetMapping
+  @PreAuthorize("hasAuthority('ADMIN')")
   public List<FertilizerDto> findAll() {
     List<Fertilizer> fertilizers = fertilizerService.findAll();
     return fertilizers

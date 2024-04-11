@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * The type Person controller.
+ */
 @RestController
 @RequestMapping("/persons")
 public class PersonController {
@@ -21,6 +25,12 @@ public class PersonController {
     this.personService = personService;
   }
 
+  /**
+   * Create person dto.
+   *
+   * @param personDto the person dto
+   * @return the person dto
+   */
   @PostMapping
   @ResponseStatus(HttpStatus.CREATED)
   public PersonDto createPerson(@RequestBody PersonCreationDto personDto) {

@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * The type Auth controller.
+ */
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
@@ -21,6 +24,12 @@ public class AuthController {
     this.authenticationManager = authenticationManager;
   }
 
+  /**
+   * Login string.
+   *
+   * @param authDto the auth dto
+   * @return the string
+   */
   @PostMapping("/login")
   public String login(@RequestBody AuthDto authDto) {
     UsernamePasswordAuthenticationToken usernamePassword =

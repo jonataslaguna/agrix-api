@@ -252,14 +252,12 @@ Para executar esta API, você precisará ter instalado:
    - **Exemplo de resposta:**
 
   ```json
-    [
     {
       "id": 1,
       "name": "Compostagem",
       "brand": "Feita em casa",
       "composition": "Restos de alimentos"
     }
-    ]
   ```
 
 #### Listar Fertilizantes:

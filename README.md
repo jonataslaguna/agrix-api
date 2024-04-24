@@ -20,7 +20,7 @@ Para executar esta API, você precisará ter instalado:
 1. Clone o repositório para a sua máquina local.
 2. Instale as dependências com o comando `mvn install`
 4. Suba o container docker com o comando `docker-compose up -d`
-5. Aguarde alguns segundos e execute o comando `mvn spring-boot:run` para iniciar o servidor.
+5. Aguarde alguns segundos e depois execute o comando `mvn spring-boot:run` para iniciar o servidor.
 
 ## Rotas Disponíveis
 

@@ -28,7 +28,7 @@ Para executar esta API, você precisará ter instalado:
 
 <details>
   
-<summary>Person</summary>
+<summary>Persons</summary>
   
 #### Criar Usuário:
 

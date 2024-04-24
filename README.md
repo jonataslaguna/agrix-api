@@ -4,7 +4,7 @@ O Agrix é um sistema desenvolvido pela AgroTech para permitir a gestão e o mon
 
 ## Visão Geral
 
-Este projeto consiste em uma API Rest desenvolvida em Java Spring para fornecer funcionalidades de gestão e monitoramento de fazendas e cultivos. Ele oferece endpoints para manipulação de dados relacionados às fazendas, aos cultivos, aos fertilizantes e às associações entre cultivos e fertilizantes.
+Este projeto consiste em uma API Rest desenvolvida em Java Spring para fornecer funcionalidades de gestão e monitoramento de fazendas e cultivos. Ele oferece endpoints para manipulação de dados relacionados às fazendas, aos cultivos, aos fertilizantes e às associações entre fazendas, cultivos e fertilizantes.
 
 ## Requisitos do Sistema
 

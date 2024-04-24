@@ -10,7 +10,7 @@ Este projeto consiste em uma API Rest desenvolvida em Java Spring para fornecer 
 
 Para executar esta API, você precisará ter instalado:
 
-- Java 11 ou superior
+- Java 17
 - Maven
 - MySQL
 - Docker

@@ -13,13 +13,14 @@ Para executar esta API, você precisará ter instalado:
 - Java 11 ou superior
 - Maven
 - MySQL
+- Docker
 
 ## Configuração
 
 1. Clone o repositório para a sua máquina local.
 2. Instale as dependências com o comando `mvn install`
 4. Suba o container do docker com o comando `docker-compose up -d`
-5. Aguarde alguns segubdos e execute o comando `mvn spring-boot:run` para iniciar o servidor.
+5. Aguarde alguns segundos e execute o comando `mvn spring-boot:run` para iniciar o servidor.
 
 ## Rotas Disponíveis
 
@@ -195,16 +196,16 @@ Para executar esta API, você precisará ter instalado:
    - Endpoint: `GET /crops/{id}`
    - **Exemplo de resposta: (para `/crops/3`)**
 
-  ```json
-    {
-      "id": 3,
-      "name": "Tomate",
-      "plantedArea": 1.9,
-      "plantedDate": "2023-05-22",
-      "harvestDate": "2024-01-10",
-      "farmId": 2
-    }
-  ```
+	   ```json
+	   {
+	     "id": 3,
+	     "name": "Tomate",
+	     "plantedArea": 1.9,
+	     "plantedDate": "2023-05-22",
+	     "harvestDate": "2024-01-10",
+	     "farmId": 2
+	   }
+	   ```
 
 #### Pesquisar Cultivos por Intervalo de Datas:
 
@@ -241,46 +242,46 @@ Para executar esta API, você precisará ter instalado:
    - Endpoint: `POST /fertilizers`
    - **Exemplo de requisição:**
 
-  ```json
-  {
-    "name": "Compostagem",
-    "brand": "Feita em casa",
-    "composition": "Restos de alimentos"
-  }
-  ```
+	  ```json
+	  {
+	    "name": "Compostagem",
+	    "brand": "Feita em casa",
+	    "composition": "Restos de alimentos"
+	  }
+	  ```
 
    - **Exemplo de resposta:**
 
-   ```json
-    {
-      "id": 1,
-      "name": "Compostagem",
-      "brand": "Feita em casa",
-      "composition": "Restos de alimentos"
-    }
-   ```
+	   ```json
+	    {
+	      "id": 1,
+	      "name": "Compostagem",
+	      "brand": "Feita em casa",
+	      "composition": "Restos de alimentos"
+	    }
+	   ```
 
 #### Listar Fertilizantes:
 
   - Endpoint: `GET /fertilizers`
   - **Exemplo de resposta:**
 
-   ```json
-    [
-      {
-        "id": 1,
-        "name": "Compostagem",
-        "brand": "Feita em casa",
-        "composition": "Restos de alimentos"
-      },
-      {
-        "id": 2,
-        "name": "Húmus",
-        "brand": "Feito pelas minhocas",
-        "composition": "Muitos nutrientes"
-      }
-    [
-   ```
+	   ```json
+	    [
+	      {
+	        "id": 1,
+	        "name": "Compostagem",
+	        "brand": "Feita em casa",
+	        "composition": "Restos de alimentos"
+	      },
+	      {
+	        "id": 2,
+	        "name": "Húmus",
+	        "brand": "Feito pelas minhocas",
+	        "composition": "Muitos nutrientes"
+	      }
+	    [
+	   ```
 </details>
 
 ## Contribuição

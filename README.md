@@ -46,9 +46,9 @@ Para executar esta API, você precisará ter instalado:
 
    ```json
    {
-  	"username": "hari_seldon",
-  	"password": "12069",
-  	"role": "ADMIN"
+     "username": "hari_seldon",
+     "password": "12069",
+     "role": "ADMIN"
    }
    
 </details>
@@ -62,15 +62,15 @@ Para executar esta API, você precisará ter instalado:
 
   ```json
    {
-    "username": "hari_seldon",
-    "password": "12069"
+     "username": "hari_seldon",
+     "password": "12069"
    }
   ```
 - **Exemplo de resposta:**
 
   ```json
   {
-	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJ..."
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJoYXJ..."
   }
   ```
   

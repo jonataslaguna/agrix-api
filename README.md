@@ -46,6 +46,7 @@ Para executar esta API, você precisará ter instalado:
 
    ```json
    {
+     "id": 2,
      "username": "hari_seldon",
      "password": "12069",
      "role": "ADMIN"

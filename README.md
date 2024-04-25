@@ -24,7 +24,7 @@ Para executar esta API, você precisará ter instalado:
 
 ## Rotas Disponíveis
 
-> ⚠️  Para ter acesso as rotas é necessário criar um usuário, efetuar o login e utulizar o token de acesso retornado.
+> ⚠️  Para ter acesso as rotas é necessário criar um usuário, efetuar o login e utilizar o token de acesso retornado.
 
 <details>
   

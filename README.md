@@ -88,7 +88,7 @@ Para executar esta API, você precisará ter instalado:
   
   ```json
   {
-    "name": "Fazendinha",
+    "name": "Fazenda",
     "size": 5
   }
   ```
@@ -98,7 +98,7 @@ Para executar esta API, você precisará ter instalado:
   ```json
   {
     "id": 1,
-    "name": "Fazendinha",
+    "name": "Fazenda",
     "size": 5
   }
 
@@ -112,12 +112,12 @@ Para executar esta API, você precisará ter instalado:
     [
       {
         "id": 1,
-        "name": "Fazendinha",
+        "name": "Fazenda",
         "size": 5.0
       },
       {
         "id": 2,
-        "name": "Fazenda do Júlio",
+        "name": "Fazenda 2",
         "size": 2.5
       }
     ]
